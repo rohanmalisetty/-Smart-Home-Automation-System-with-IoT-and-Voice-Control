@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Control</h1>
+
+        <div class="sensor-data">
+            <h2>Environmental Data</h2>
+            <p>Temperature: <span id="temperature">N/A</span> &deg;C</p>
+            <p>Humidity: <span id="humidity">N/A</span> %</p>
+            <p>Light: <span id="light">N/A</span> %</p>
+            <p>Motion: <span id="motion">N/A</span></p>
+        </div>
+
+        <div class="appliance-control">
+            <h2>Appliance Control</h2>
+            <div class="appliance-item">
+                <span>Light 1</span>
+                <button onclick="controlAppliance('light1', 1)">ON</button>
+                <button onclick="controlAppliance('light1', 0)">OFF</button>
+            </div>
+            <div class="appliance-item">
+                <span>Fan 1</span>
+                <button onclick="controlAppliance('fan1', 1)">ON</button>
+                <button onclick="controlAppliance('fan1', 0)">OFF</button>
+            </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
